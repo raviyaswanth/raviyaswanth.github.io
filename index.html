@@ -34,7 +34,7 @@ body{
 }
 .navbar
 {
-    background-image: linear-gradient(to right,#a517ba,#5f1782)
+    background-image: linear-gradient(to right,orange,red)
 }
 .navbar-nav li{
     padding: 0 10px;
@@ -56,7 +56,7 @@ body{
 }
 /*------------------------------------------------banner section----------------------------------------------*/
 #banner{
-  background-image : linear-gradient(to right,#a517ba,#5f1782);
+  background-image : linear-gradient(to right,orange,red);
   padding-top:5%;
   color : white;
 }
@@ -118,14 +118,18 @@ body{
 }
 #about-us
 {
-background : #f8f9fa;
+background : #ADD8E6;
 padding-bottom : 50px;
 padding-top : 50px;
+}
+#team
+{
+background : #FF7F50;
 }
 .TITLE2::before
 {
    content:' ';
-   background : #7b1798;
+   background :red;
    height : 5px;
    width : 200px;
    margin-left : auto;
@@ -136,7 +140,7 @@ padding-top : 50px;
 .TITLE2::after
 {
    content:' ';
-   background : #7b1798;
+   background : red;
    height : 10px;
    width : 50px;
    margin-left : auto;
@@ -149,6 +153,7 @@ padding-top : 50px;
 {
 font-size : 30px;
 font-weigth : 1200;
+color: black;
 }
 .parateam
 {
@@ -156,7 +161,7 @@ font-size : 35px;
 font-weight : 400;
 padding-top : 50px;
 padding-right : 0;
-
+colour : black;
 }
 .col-md-4 img{
 padding-top : 100px;
@@ -172,23 +177,34 @@ border = 10px solid blue !important ;
 }
 #contact
 {
-background : #f8f9fa;
+background : white;
 padding-bottom : 50px;
 padding-top : 50px;}
 #social #container {
   text-align: center;
 }
+.letter{
 
-#social #container ul {
-  float: left;
+column-count : 4;
+column-gap :0;
+margin : auto;
+margin-top : 50px;
+margin-bottom : 50px;
 }
-
-#social #container ul li {
-  float: left;
-  padding-left: 10px;
-  list-style-type: none;
+.col-md-3 fa{
+width : 10px;
 }
+#finishing{
 
+  background-image : linear-gradient(to right,orange,red);
+  padding-top:0;
+
+}
+.last-img{
+width : 100%}
+.letter fa{
+color : red;
+}
 
 
     </style>
@@ -318,38 +334,40 @@ padding-top : 50px;}
 <section id="contact">
 <div class="container text-center">
 <h1 class="TITLE text-center">CONTACT<h1>
-</div>
-<div id="social">
-  <div id="container">
-     <ul>
-        <li>
-           <a href="url" title="linkedin" target="_blank">
+
+<div class="row">
+    <div class = "letter">
+           <a href="https://www.linkedin.com/in/yaswanth-sai-7b018a199/" title="linkedin" target="_blank">
               <i class="fa fa-linkedin"></i>
            </a>
-        </li>
-
-        <li>
-           <a href="url" title="twitter" target="_blank">
-              <i class="fa fa-twitter"></i>
+       </div>
+ <div class = "letter">
+           <a href="5.jpg" title="facebook" target="_blank">
+              <i class="fa fa-facebook"></i>
            </a>
-        </li>
-
-        <li>
-           <a href="url" title="skype" target="_blank">
-              <i class="fa fa-skype"></i>
-           </a>
-        </li>
-
-        <li>
-           <a href="url" title="instagram" target="_blank">
+       </div>
+ <div class = "letter">
+           <a href="https://www.instagram.com/yaswanthsai_34/" title="instagram" target="_blank">
               <i class="fa fa-instagram"></i>
            </a>
-        </li>
-     </ul>
-  </div>
-</div>
-</section>
+       </div>
+ <div class = "letter">
+           <a href="https://www.google.com/" title="google" target="_blank">
+              <i class="fa fa-google"></i>
+           </a>
+       </div>
 
+       </div>
+
+</section>
+<section id="finishing">
+<img class="last-image image-fluid" src="7.png" width = 100%>
+
+
+
+
+
+</section>
 
 
 
