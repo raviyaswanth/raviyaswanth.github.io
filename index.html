@@ -55,18 +55,23 @@ body{
     outline: none !important;
 }
 /*------------------------------------------------banner section----------------------------------------------*/
-#banner{
-  background-image : linear-gradient(to right,orange,red);
-  padding-top:5%;
-  color : white;
+#banner
+{
+background-image : url(12.jpg);
+height : 100vh;
+width : 100%;
+
+background-attachment : fixed;
 }
 .banner-title{
+ color: white;
   font-size:40px;
   font-weight:600;
   margin-top:100px;
 }
 .java
 {
+color : white;
 font-size : 20px;
 font-weight: 800;
 }
@@ -79,13 +84,17 @@ font-weight: 800;
 }
 .bottom-img{
   width : 100%;
+   padding-top: 85px;
+
   }
   /*----------------------------------------services section-------------------------------------------------*/
   #SERVICES{
     padding: 80px 0;
+background : black;
     
   }
 .SERVICES h2{
+
    padding : 5px 5px;
    margin-top : 25px;
    text-transform : uppercase;
@@ -124,13 +133,14 @@ font-weight: 800;
 #about-us
 {
 background-image :url("sky.jpg");
+background-attachment : fixed;
 
 padding-bottom : 50px;
 padding-top : 50px;
 }
 #team
 {
-background : #FF7F50;
+background : red;
 }
 .TITLE2::before
 {
@@ -190,7 +200,7 @@ border = 10px solid blue !important ;
 }
 #contact
 {
-background : white;
+background :white;
 padding-bottom : 50px;
 padding-top : 50px;}
 #social #container {
@@ -371,13 +381,13 @@ position : absolute;
       <div class="col-md-6">
       <p class="banner-title">TRAVEL AT LOWEST PRICE</P>
       <p id="username" class="java"></p>
-      <p>made by RAVI YASWANTH SAI</p>
+      <p style = "color: white">made by RAVI YASWANTH SAI</p>
       <button type="button" class="btn btn-primary" onclick= "alert('page not yet built')">sign up</button>
       <button type="button" class="btn btn-primary" onclick= "alert('page not yet built')">sign in</button>
       </div>
       </div>
       </div>
-      <img src="rsz_background.png" class="bottom-img">
+      <img src="rs.png" class="bottom-img">
   </section>
 	<!----------------------------------------------animation-------------------------------------------------------->
 <section id="animation">
@@ -393,7 +403,7 @@ position : absolute;
 <section id="SERVICES">
 
   <div class="container text-center">
-  <h1 class="TITLE">WHAT WE DO?</h1>
+  <h1 class="TITLE" style="color: white">WHAT WE DO?</h1>
 </div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
