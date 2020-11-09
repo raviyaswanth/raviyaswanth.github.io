@@ -1,800 +1,96 @@
-<!-- Main navigation -->
-    <!DOCTYPE html>
-    <html>
-    <head> 
-        <title>RAVI YASWANTH SAI</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
-
-        <!-- JQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
-    </head>
-    <body>
-        <style type="text/css">
-
-            /* Required for full background image */
-
-            html,
-            body,
-            header,
-            #intro-section {
-                height: 100%;
-            }
-
-            @media (max-width: 740px) {
-                html,
-                body,
-                header,
-                #intro-section {
-                    height: 100vh;
-                }
-            }
-
-            .top-nav-collapse, .page-footer {
-                background-color: #563e91 !important;
-            }
-
-            .navbar:not(.top-nav-collapse) {
-                background: transparent !important;
-            }
-
-            @media (max-width: 991px) {
-                .navbar:not(.top-nav-collapse) {
-                    background: #563e91 !important;
-                }
-            }
-
-            .rgba-gradient {
-                background: rgba(35, 7, 77, 0.6);
-                /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
-                /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            }
-
-
-            .img-gradient:after {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                display: inline-block;
-                /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
-                /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
-                /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
-                /* Opera 11.10+ */
-                /* IE10+ */
-                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
-                background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
-                /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
-                /* IE6-9 */
-            }
-
-            img{ max-width:100%;}
-
-.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
-.gallery_box{ padding:0;display: flow-root;}
-
-.gallery_box li:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.gallery_box li img{-webkit-transition: transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
-    transition: transform 0.5s ease;}
-.gallery_box li:nth-child(even) {
-    height: 304px;
-}
-.gallery_box li:nth-child(odd) {
-    height: 438px; 
-}
-.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
-.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
-.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
-.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
-.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
-
-        </style>
-        <header>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#intro">Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" data-offset="90">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#articles" data-offset="90">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- Social Icon  -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                <i class="fab fa-facebook light-green-text-2"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                <i class="fab fa-twitter light-green-text-2"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                <i class="fab fa-instagram light-green-text-2"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar -->
-        <!-- Full Page Intro -->
-        <div id="intro-section" class="view">
-            <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline
-            autoplay muted loop>
-            <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
-            </video>
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-                <!-- Content -->
-                <div class="container px-md-3 px-sm-0">
-                    <!--Grid row-->
-                    <div class="row wow fadeIn">
-                        <!--Grid column-->
-                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">RAVI YASWANTH SAI</h3>
-                            <hr class="hr-light my-4 w-75">
-                            <h4 class="subtext-header mt-2 mb-4">I am a Tech (Enthuastic)^2</h4>
-                            <a href="#!" class="btn btn-rounded btn-outline-white">
-                                <i class="fa fa-home"></i> Checkout
-                            </a>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                    <!--Grid row-->
-                </div>
-                <!-- Content -->
-            </div>
-            <!-- Mask & flexbox options-->
-        </div>
-        <!-- Full Page Intro -->
-    </header>
-
-    <!--Main layout-->
-    <main>
-
-        <!--Section: about-->
-        <section id="about" class="py-5">
-
-            <!-- Container -->
-            <div class="container">
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold text-center mb-5">About Me</h2>
-                <!-- Section description -->
-                <p class="lead grey-text text-center w-responsive mx-auto mb-5">Hi , I am yaswanth persuing my btech in electronics and communication in VIT vellore. I am tech enthusiast because of which your are watching my website.</p>
-
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-5 text-center text-lg-left">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-lg-7">
-
-                        <!-- Grid row -->
-                        <div class="row mb-3">
-
-                            <!-- Grid column -->
-                            <div class="col-1">
-                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-xl-10 col-md-11 col-10">
-                                <h5 class="font-weight-bold mb-3">Feature 1</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
-                                    minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
-                                assumenda deleniti hic.</p>
-                            </div>
-                            <!-- Grid column -->
-
-                        </div>
-                        <!-- Grid row -->
-
-                        <!-- Grid row -->
-                        <div class="row mb-3">
-
-                            <!-- Grid column -->
-                            <div class="col-1">
-                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-xl-10 col-md-11 col-10">
-                                <h5 class="font-weight-bold mb-3">Feature 2</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
-                                    minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
-                                assumenda deleniti hic.</p>
-                            </div>
-                            <!-- Grid column -->
-
-                        </div>
-                        <!-- Grid row -->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!-- Grid column -->
-                            <div class="col-1">
-                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-xl-10 col-md-11 col-10">
-                                <h5 class="font-weight-bold mb-3">Feature 3</h5>
-                                <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim
-                                    ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
-                                assumenda deleniti hic.</p>
-                            </div>
-                            <!-- Grid column -->
-
-                        </div>
-                        <!--Grid row-->
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!-- Grid row -->
-
-            </div>
-            <!-- Container -->
-
-        </section>
-        <!--Section: about-->
-
-        <!--Section: projects-->
-        <section id="projects" class="text-center py-5" style="background-color: #eee;">
-
-            <!-- Container -->
-            <div class="container">
-
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold mb-5">Our best projects</h2>
-                <!-- Section description -->
-                <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
-
-                <!-- Grid row -->
-                <div class="row text-center">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid" alt="Sample project image">
-                            <a>
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <!--Excerpt-->
-                        <div class="card-body pb-0">
-                            <h4 class="font-weight-bold my-3">Title of the news</h4>
-                            <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
-                                necessitatibus saepe eveniet ut et voluptates repudiandae.
-                            </p>
-                            <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid" alt="Sample project image">
-                            <a>
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <!--Excerpt-->
-                        <div class="card-body pb-0">
-                            <h4 class="font-weight-bold my-3">Title of the news</h4>
-                            <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
-                                necessitatibus saepe eveniet ut et voluptates repudiandae.
-                            </p>
-                            <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6">
-                        <!--Featured image-->
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid" alt="Sample project image">
-                            <a>
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                        <!--Excerpt-->
-                        <div class="card-body pb-0">
-                            <h4 class="font-weight-bold my-3">Title of the news</h4>
-                            <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
-                                necessitatibus saepe eveniet ut et voluptates repudiandae.
-                            </p>
-                            <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-            </div>
-            <!-- Container -->
-
-        </section>
-        <!--Section: projects-->
-
-        <!--Section: gallery-->
-        <section id="gallery" class="text-center py-5">
-
-            <!-- Container -->
-            <div class="container">
-
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold mb-5">My best projects</h2>
-                <!-- Section description -->
-                <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
-
-                <ul class="gallery_box">
-    <li>
-        <a href="#0"><img src="https://picsum.photos/600/700/?random">
-        <div class="box_data">
-            <span>Project 1</span>
-        </div></a>
-    </li>
-        <li>
-        <a href="#0"><img src="https://picsum.photos/600/701/?random">
-        <div class="box_data">
-            <span>Project 2</span>
-        </div></a>
-    </li>
-        <li>
-        <a href="#0"><img src="https://picsum.photos/600/702/?random">
-        <div class="box_data">
-            <span>Project 3</span>
-        </div></a>
-    </li>
-            <li>
-        <a href="#0"><img src="https://picsum.photos/600/703/?random">
-        <div class="box_data">
-            <span>Project 4</span>
-        </div></a>
-    </li>
-            <li style="position: relative;
-    top: -134px;">
-        <a href="#0"><img src="https://picsum.photos/600/704/?random">
-        <div class="box_data">
-            <span>Project 5</span>
-        </div></a>
-    </li>
-            <li>
-        <a href="#0"><img src="https://picsum.photos/600/705/?random">
-        <div class="box_data">
-            <span>Project 6</span>
-        </div></a>
-    </li>
-    
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width-device-width,initial-scale-1.0">
+<link rel="stylesheet" href="style.css">
+<title>YASWANTH</title>
+</head>
+<body>
+<div class="navbar">
+<nav>
+<span class="brand">
+<i><b>R.Y.S</b></i>
+</span>
+<ul>
+<li>
+<a href="#Home">Home</a>
+</li>
+<li>
+<a href="#aboutme">About</a>
+</li>
+<li>
+<a href="#contactme">Contact</a>
+</li>
 </ul>
-
+</nav>
+</div>
+<section id="Home">
+<div class="container">
+<div class="image-container">
+<img src="img.jpg" alt="image not found" class="me">
+<h4>Yaswanth Sai</h4>
+</div>
+<div class="designation">
+<h1>Web Developer</h1>
+<h2>Python learner</h2>
+<h3>ML learner</h3>
 
 </div>
-<!-- Container -->
+</div>
 
 </section>
-<!--Section: gallery-->
 
-<!--Section: testimonials-->
-<section id="testimonials" class="text-center py-5" style="background-color: #eee;">
-
-    <!-- Container -->
-    <div class="container">
-
-        <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold mb-5">Testimonials</h2>
-
-        <!-- Carousel Wrapper -->
-        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
-        data-ride="carousel" data-interval="false">
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active">
-                <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto mb-4">
-                        <img src="https://img.cinemablend.com/filter:scale/quill/d/9/5/a/c/9/d95ac9d6f0acd56e12b9452301c763cd1aeffe51.jpg?fw=1200" class="rounded-circle img-fluid"
-                        alt="First sample avatar image">
-                    </div>
-                    <!--Content-->
-                    <p>
-                        <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem
-                        ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet
-                        molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste
-                        impedit quidem dolor veniam.
-                    </p>
-                    <h4 class="font-weight-bold">Tony stark</h4>
-                    <h6 class="font-weight-bold my-3">Founder at stark enterprises</h6>
-                    <!--Review-->
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star-half-full amber-text"> </i>
-                </div>
-            </div>
+<section id="aboutme">
+<div class="container2">
+<div class="edu">
+<h1 class="head">Education</h1>
+<h2 class="sub-head">Primary Education</h2>
+<p>Narayana Junior College, Nellore</p>
+<h2 class="sub-head">Higher Education</h2>
+<p>Vellore institute of technology, Vellore</p>
+</div>
+<div class="skills">
+<h1 class="head">Skills</h1>
+<h2 class="sub-head">Web development</h2>
+<h2 class="sub-head">Python programming</h2>
+<h2 class="sub-head">Machine learning</h2>
+</div>
+<div class="about">
+<h1 class="head">About</h1>
+<p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+ dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+deserunt mollit anim id est laborum</p>
+</div>
 </div>
 </section>
-            
-<!--Section: testimonials-->
 
-<!--Section: call to action-->
-<div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
-    <div class="flex-center rgba-black-light pattern-1">
-        <div class="white-text smooth-scroll mx-4">
-            <h2 class="h2-responsive mb-5 wow fadeIn">
-                
-                Basically i am not a self motivated person, but i take motivation from somewhere whenever i am demotivated and strives hard to develop my self.              
-            </h2>
-            <div class="text-center">
-                <a href="#contact" class="btn btn-outline-white wow fadeIn " data-offset="100" data-wow-delay="0.2s">Contact
-                me</a>
-            </div>
-        </div>
-    </div>
+<section id="contactme">
+<div class="container3">
+<div class="contact-form">
+<div class="form-txt">
+<h2>Drop in your details below!</h2>
+<h2>I will ping you</h2>
+
 </div>
-<!--Section: call to action-->
+<input type="text" placeholder="Name" class="form-input">
+<input type="email" placeholder="E-mail" class="form-input">
+<textarea rows="5" placeholder="Type your message" class="form-input"></textarea>
+<button class="btn">send</button>
+</div>
 
-<!--Section: articles-->
-<section id="articles" class="text-center py-5">
-
-    <!-- Container -->
-    <div class="container">
-
-        <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold mb-5">Blogs</h2>
-
-        <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
-
-                <!-- Card Narrower -->
-                <div class="card card-cascade narrower">
-
-                    <!-- Card image -->
-                    <div class="view view-cascade">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
-                        alt="Card image cap">
-                        <a>
-                            <div class="mask img-gradient"></div>
-                        </a>
-                    </div>
-
-                    <!-- Card content -->
-                    <div class="card-body card-body-cascade">
-
-                        <!-- Label -->
-                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> Blog</h5>
-                        <!-- Title -->
-                        <h4 class="font-weight-bold card-title">CSS</h4>
-                        <!-- Text -->
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                        <!-- Button -->
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-
-                </div>
-                <!-- Card Narrower -->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!-- Card Narrower -->
-                <div class="card card-cascade narrower">
-
-                    <!-- Card image -->
-                    <div class="view view-cascade">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
-                        alt="Card image cap">
-                        <a>
-                            <div class="mask img-gradient"></div>
-                        </a>
-                    </div>
-
-                    <!-- Card content -->
-                    <div class="card-body card-body-cascade">
-
-                        <!-- Label -->
-                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> Blog</h5>
-                        <!-- Title -->
-                        <h4 class="font-weight-bold card-title">HTML</h4>
-                        <!-- Text -->
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                        <!-- Button -->
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-
-                </div>
-                <!-- Card Narrower -->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!-- Card Narrower -->
-                <div class="card card-cascade narrower">
-
-                    <!-- Card image -->
-                    <div class="view view-cascade">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
-                        alt="Card image cap">
-                        <a>
-                            <div class="mask img-gradient"></div>
-                        </a>
-                    </div>
-
-                    <!-- Card content -->
-                    <div class="card-body card-body-cascade">
-
-                        <!-- Label -->
-                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> Blog</h5>
-                        <!-- Title -->
-                        <h4 class="font-weight-bold card-title">Javascript</h4>
-                        <!-- Text -->
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                        <!-- Button -->
-                        <a class="btn btn-unique">Button</a>
-
-                    </div>
-
-                </div>
-                <!-- Card Narrower -->
-
-            </div>
-            <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-    </div>
-    <!-- Container -->
-
+</div>
 </section>
-<!--Section: articles-->
-
-<!--Section: contact-->
-<section id="contact" class="py-5" style="background-color: #eee;">
-
-    <div class="container">
-
-        <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact Me</h2>
-        <!-- Section description -->
-        <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
-
-        <!-- Grid row -->
-        <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-9 mb-md-0 mb-5">
-
-                <form>
-
-                    <!-- Grid row -->
-                    <div class="row">
-
-                        <!-- Grid column -->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="contact-name" class="form-control">
-                                <label for="contact-name" class="">Your name</label>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="contact-email" class="form-control">
-                                <label for="contact-email" class="">Your email</label>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-                    <!-- Grid row -->
-                    <div class="row">
-
-                        <!-- Grid column -->
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="contact-Subject" class="form-control">
-                                <label for="contact-Subject" class="">Subject</label>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-                    <!-- Grid row -->
-                    <div class="row">
-
-                        <!-- Grid column -->
-                        <div class="col-md-12">
-                            <div class="md-form">
-                                <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
-                                <label for="contact-message">Your message</label>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-                </form>
-
-                <div class="text-center text-md-left">
-                    <a class="btn btn-purple btn-md">Send</a>
-                </div>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <i class="fa fa-map-marker fa-2x purple-text"></i>
-                        <p>DeeTee Manipal</p>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fa-2x mt-4 purple-text"></i>
-                        <p>+ 01 234 567 89</p>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope fa-2x mt-4 purple-text"></i>
-                        <p class="mb-0">contact@example.com</p>
-                    </li>
-                </ul>
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-    </div>
-
-</section>
-<!--Section: contact-->
-
-</main>
-<!--Main layout-->
-
-<!-- Footer -->
-<footer class="page-footer font-small pt-4">
-
-    <!-- Footer Elements -->
-    <div class="container">
-
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1">
-                    <i class="fab fa-facebook"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1">
-                    <i class="fab fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                    <i class="fab fa-google-plus"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1">
-                    <i class="fab fa-linkedin"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-dribbble mx-1">
-                    <i class="fab fa-dribbble"> </i>
-                </a>
-            </li>
-        </ul>
-        <!-- Social buttons -->
-
-    </div>
-    <!-- Footer Elements -->
-    
-    <!-- Copyright -->
 
 
-</footer>
-<!-- Footer -->
+
+
+
+
 </body>
 </html>
