@@ -2,115 +2,168 @@
 <html lan="en">
 <head>
 <meta charset='UTF-8'>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YASWANTH</title>
 </head>
 <style>
 <!------------------------------------------------------------------styling-------------------------------------------------------------------------------------->
+*{
+margin :0px;
+padding : 0px;
+background : #161616;
+}
 body{
-margin : 0;
-padding : 0;
-}
-.brand{
-font-size : 35px;
-font-weight : 300;
-
-color : white;
-}
-.unordred{
-list-style : none;
-color : white;
-display : flex;
-}
-.unordred li{
-display : inline;
-padding : 0px 20px;
-
-}
-.unordred li a{
-text-decoration : none ;
-color : white;
+background : #161616;
+width : 100%;
 }
 #hi{
-
-display : flex;
-flex-wrap : no-wrap;
-
-}
-#hi div{
-width : 675px;
-display : flex;
-background : #161616;
-justify-content : center;
-align-items : center;
-}
-
-#home{
-
-height : 100%;
 width : 100%;
 background : #161616;
 }
-#hi2{
+.brand{
+color: white;
+font-size : 45px;
+font-weight : 300;
+}
+#hi div{
+justify-content : center;
+text-align : center;
+align-items : center;
+}
+.lier{
+text-align : center;
+}
+.unordered{
+list-style : none;
+color : white;
 display : flex;
-flex-wrap : wrap;
+text-align : center;
+}
+.unordered li{
+display: inline;
+padding : 0px 10px;
 
 }
-#hi2 div{
-width : 650px;
+.unordered li a{
+text-decoration : none;
+color : white;
+}
+#home{
+margin : 0px;
 background : #161616;
+width : 100%;
+}
+#hi2 {
 justify-content : center;
 align-items : center;
-padding : 35px 0px;
-color : white;
+padding-top : 20px;
 text-align : center;
-padding-top : 150px;
-padding-bottom : 150px;
+}
+.image{
+height : 250px;
+width : 250px;
+border : yellow solid 5px;
+border-radius : 200px;
+}
+.skills{
+color : white;
 
 }
-.image {
-height : 200px;
-width : 200px;
-border-radius : 100px;
-border: 5px solid yellow}
-.name{
-font-size : 35px;
-font-weight : 150;
-opacity : 70%;}
 .skills h1{
-font-size : 50px;
-font-weight : 300;
-margin : 0;
+font-size : 35px;
+
 }
 .skills h2{
-font-size : 40px;
-font-weight : 200;
+font-size : 30px;
 opacity : 70%;
-margin : 10px;}
+}
 .skills h3{
 font-size : 25px;
-font-weight : 100;
 opacity : 40%;
-margin : 10px;}
-.skills{
-justify-content : space-between;
+}
+#hi2 p{
+color : white ;
+font-size : 20px;
+}
+.about-me{
+text-align : center;}
+.about-me div{
+background : #008080;
+border-radius : 10px;
+margin : 10px;
+padding : 10px 10px;
+}
+.about-me h3{
+color : white ;
+font-size : 30px;
+font-weight : 250;
+}
+.about-me p{
+color : white;
+font-size : 20px;
+font-weight : 200;
+opacity : 75%;
+}
+.yaswanth{
+background : #008080;
+border-radius : 20px;
+text-align : center;
+margin : 10px;
+padding : 10px 10px;
+}
+.yaswanth p{
+color : white;
+opacity : 75%;
+font-size : 20px;
+}
+.content{
+background : #008080;
+margin : 10px;
+text-align : center;
+color : white;
+padding : 20px 10px;
+border-radius : 20px;
+}
+.content input{
+margin : 10px;
+width : 200px;
+height : 45px;
+background : #161616;
+color: white;
+font-size : 15px;
+border-radius : 20px;
+}
+.tet{
+height : 500px;
+padding-bottom : 20px;
+}
+.content button{
+margin : 10px;
+width : 150px;
+height : 35px;
+color : #161616;
+background : light-blue;
+font-size : 20px;
+border-radius : 20px;}
 <!-------------------------------------------------------------end of style-------------------------------------------------------------------------------------->
 </style>
 <body>
 <!----------------------------------------------------------------------body------------------------------------------------------------------------------------->
-
+<!-------------------------------------------------------------------navbar-------------------------------------------------------------------------------------->
 <div id ="hi">
 <div>
 <h1 class="brand"><i>R.Y.S</i></h1>
 </div>
-<div>
-<ul class="unordred">
+<div class="lier">
+<ul class="unordered">
 <li><a href="#home">HOME</a></li>
-<li><a href="home">ABOUT ME</a></li>
-<li><a href="home">CONTACT</a></li>
+<li><a href="#about">ABOUT ME</a></li>
+<li><a href="#contact">CONTACT</a></li>
 </ul>
 </div>
 </div>
+<!-------------------------------------------------------------navbar---------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------home------------------------------------------------------------------------------------->
 <section id="home">
 <div id = "hi2">
 <div>
@@ -122,11 +175,54 @@ justify-content : space-between;
 <h2>PYTHON</h2>
 <h3>MACHINE LEARNING</h3>
 </div>
-
 </div>
-
-
 </section>
+<!----------------------------------------------------------------home--------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------about-------------------------------------------------------------------------------------->
+
+<section id="about">
+<div class = "hi5">
+<div class="about-me">
+<div>
+<h3>SKILLS</h3>
+<p>Web Development</p>
+<p>Python</p>
+<p>Machine learning</p>
+<p>game developer</p>
+<p>video editing</p>
+</div>
+<div>
+<h3>EDUCATION</h3>
+<p class="heading">HIGH SCHOOL :</p>
+<p>Narayana Junior College</p>
+<p class = "heading">COLLEGE :</p>
+<p>Vellore insitute of technology</p>
+</div>
+</div>
+<div class="yaswanth">
+<p>My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="cont">
+<div class="content">
+<div><h2>CONTACT<h2></div>
+<div><input type="text" placeholder="ENTER YOUR NAME"></div>
+<div><input type="text" placeholder="EMAIL"></div>
+<div><input type="text" class="tet"placeholder="WRITE YOUR OPINION"></div>
+<div><button>SUBMIT</button></div>
+</div>
+</div>
+</section>
+
 
 
 
