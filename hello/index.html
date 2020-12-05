@@ -7,6 +7,8 @@
 </head>
 <style>
 <!------------------------------------------------------------------styling-------------------------------------------------------------------------------------->
+
+
 *{
 margin :0px;
 padding : 0px;
@@ -15,10 +17,12 @@ background : #161616;
 body{
 background : #161616;
 width : 100%;
+z-index : -1;
 }
 #hi{
 width : 100%;
 background : #161616;
+
 }
 .brand{
 color: white;
@@ -31,7 +35,9 @@ text-align : center;
 align-items : center;
 }
 .lier{
-text-align : center;
+display : flex;
+width : 100%;
+justify-conent : center;
 }
 .unordered{
 list-style : none;
@@ -42,7 +48,7 @@ text-align : center;
 .unordered li{
 display: inline;
 padding : 0px 10px;
-
+text-align : center;
 }
 .unordered li a{
 text-decoration : none;
@@ -59,15 +65,18 @@ align-items : center;
 padding-top : 20px;
 text-align : center;
 }
+.hi5{
+display : flex;
+}
 .image{
 height : 250px;
 width : 250px;
 border : yellow solid 5px;
 border-radius : 200px;
+margin : 20px;
 }
 .skills{
-color : white;
-
+color : yellow;
 }
 .skills h1{
 font-size : 35px;
@@ -90,8 +99,13 @@ text-align : center;}
 .about-me div{
 background : #008080;
 border-radius : 10px;
-margin : 10px;
-padding : 10px 10px;
+margin : 40px;
+padding : 50px 40px;
+
+}
+.about-me div{
+diaplay : flex;
+flex-wrap : no-wrap;
 }
 .about-me h3{
 color : white ;
@@ -108,8 +122,8 @@ opacity : 75%;
 background : #008080;
 border-radius : 20px;
 text-align : center;
-margin : 10px;
-padding : 10px 10px;
+margin : 40px;
+padding : 50px 40px;
 }
 .yaswanth p{
 color : white;
@@ -117,14 +131,17 @@ opacity : 75%;
 font-size : 20px;
 }
 .content{
+width : 30%;
+margin : auto;
 background : #008080;
-margin : 10px;
+margin-bottom : 30px;
 text-align : center;
 color : white;
-padding : 20px 10px;
+padding : 40px 0px;
 border-radius : 20px;
 }
 .content input{
+
 margin : 10px;
 width : 200px;
 height : 45px;
@@ -145,6 +162,18 @@ color : #161616;
 background : light-blue;
 font-size : 20px;
 border-radius : 20px;}
+
+@media screen and (max-width : 750px){
+.hi5{
+flex-wrap : wrap;
+}
+.content{
+width : 90%;
+margin : auto;
+}
+
+
+
 <!-------------------------------------------------------------end of style-------------------------------------------------------------------------------------->
 </style>
 <body>
