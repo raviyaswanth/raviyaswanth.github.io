@@ -19,64 +19,73 @@ background : #161616;
 width : 100%;
 z-index : -1;
 }
-#hi{
-width : 100%;
-background : #161616;
-
-}
-.brand{
-color: white;
-font-size : 45px;
-font-weight : 300;
-}
-#hi div{
-justify-content : center;
+.sleep{
+display : flex;
 text-align : center;
+}
+.div1{
+width : 100%;
+height : 20vh;
+display : flex;
+justify-content : center;
 align-items : center;
 }
-.lier{
-display : flex;
+.div1 h1{
+color : white;
+font-size : 35px;
+font-weight : 300;
+}
+.div2{
 width : 100%;
-justify-conent : center;
+height : 20vh;
+display : flex;
+justify-content : center;
+align-items : center;
 }
-.unordered{
-list-style : none;
-color : white;
+.div2 ul{
+list-decoration : none;
 display : flex;
 text-align : center;
+justify-content : space-between;
+
 }
-.unordered li{
-display: inline;
-padding : 0px 10px;
-text-align : center;
+.div2 ul li{
+margin : 10px;
+display : flex;
+
 }
-.unordered li a{
-text-decoration : none;
+.div2 ul a{
 color : white;
+text-decoration : none;
+font-size : 20px;
 }
 #home{
 margin : 0px;
 background : #161616;
 width : 100%;
 }
-#hi2 {
+.hi2 {
+width : 100%;
+display : flex;
+text-align : center;
 justify-content : center;
 align-items : center;
 padding-top : 20px;
-text-align : center;
 }
-.hi5{
-display : flex;
+.hi2 div{
+width : 100%;
+margin-top : 50px;
+margin-bottom : 50px;
 }
 .image{
 height : 250px;
 width : 250px;
 border : yellow solid 5px;
 border-radius : 200px;
-margin : 20px;
 }
 .skills{
 color : yellow;
+text-align : center;
 }
 .skills h1{
 font-size : 35px;
@@ -90,101 +99,131 @@ opacity : 70%;
 font-size : 25px;
 opacity : 40%;
 }
-#hi2 p{
+.hi2 p{
 color : white ;
-font-size : 20px;
+font-size : 35px;
 }
-.about-me{
-text-align : center;}
+.about-me {
+display : flex;
+justify-content : center;
+width : 100%;
+}
 .about-me div{
+width : 100%;
+margin : 20px;
 background : #008080;
-border-radius : 10px;
-margin : 40px;
-padding : 50px 40px;
-
-}
-.about-me div{
-diaplay : flex;
-flex-wrap : no-wrap;
-}
-.about-me h3{
-color : white ;
-font-size : 30px;
-font-weight : 250;
-}
-.about-me p{
 color : white;
-font-size : 20px;
-font-weight : 200;
+border-radius : 20px;
+text-align : center;
+}
+.about-me div h3{
+font-size : 35px;
+font-weight : 300;
+}
+.about-me div p{
+font-size : 25px;
+font-weight : 150;
 opacity : 75%;
 }
 .yaswanth{
+margin : 20px;
+font-size : 25px;
+font-weight : 150;
 background : #008080;
 border-radius : 20px;
 text-align : center;
-margin : 40px;
-padding : 50px 40px;
+padding : 30px 15px;
+color : white;
 }
 .yaswanth p{
-color : white;
 opacity : 75%;
-font-size : 20px;
+}
+#contact{
+display : flex;
+justify-content : center;
+align-items : center;
+height : 100vh;
 }
 .content{
-width : 30%;
-margin : auto;
 background : #008080;
-margin-bottom : 30px;
+border-radius : 20px;
+width : 40%;
+margin : auto;
 text-align : center;
-color : white;
-padding : 40px 0px;
-border-radius : 20px;
-}
+padding : 40px 0px;}
 .content input{
-
-margin : 10px;
-width : 200px;
-height : 45px;
 background : #161616;
-color: white;
-font-size : 15px;
+margin : 8px;
 border-radius : 20px;
-}
-.tet{
-height : 500px;
-padding-bottom : 20px;
+width : 60%;
+height : 5vh;
 }
 .content button{
-margin : 10px;
-width : 150px;
-height : 35px;
-color : #161616;
-background : light-blue;
+background : #008080;
+color : white;
 font-size : 20px;
-border-radius : 20px;}
+margin : 20px;
+border : none;
+}
+.content a{
+text-decoration : none;
+color : white;
+font-weigth : 300;
+}
+.content button:hover{
+color : yellow;
+}
+
+
 
 @media screen and (max-width : 750px){
-.hi5{
+.sleep{
 flex-wrap : wrap;
 }
-.content{
-width : 90%;
-margin : auto;
+.div1 h1{
+color : white;
+font-size : 30px;
+font-weight : 200;
 }
+.hi2 {
+flex-wrap : wrap;
+}
+.div2 ul a{
+color : white;
+text-decoration : none;
+font-size : 15px;
+}
+.div2 ul li{
+margin : 5px;
+display : flex;
 
-
+}
+.about-me{
+flex-wrap : wrap;
+}
+.yaswanth p{
+opacity : 75%;
+font-size : 15px;}
+.content{
+width : 100%;
+margin : 10px;
+}
+#contact{
+height : 70vh;
+}
+}
 
 <!-------------------------------------------------------------end of style-------------------------------------------------------------------------------------->
 </style>
 <body>
 <!----------------------------------------------------------------------body------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------navbar-------------------------------------------------------------------------------------->
-<div id ="hi">
-<div>
-<h1 class="brand"><i>R.Y.S</i></h1>
+<div class="sleep">
+<div class="div1">
+<h1 ><i>R.Y.S</i></h1>
 </div>
-<div class="lier">
-<ul class="unordered">
+<div class="div2">
+<ul >
 <li><a href="#home">HOME</a></li>
 <li><a href="#about">ABOUT ME</a></li>
 <li><a href="#contact">CONTACT</a></li>
@@ -194,7 +233,7 @@ margin : auto;
 <!-------------------------------------------------------------navbar---------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------home------------------------------------------------------------------------------------->
 <section id="home">
-<div id = "hi2">
+<div class= "hi2">
 <div>
 <img src="img.jpg" class="image">
 <p class="name">Yaswanth</p>
@@ -210,7 +249,6 @@ margin : auto;
 <!----------------------------------------------------------------------about-------------------------------------------------------------------------------------->
 
 <section id="about">
-<div class = "hi5">
 <div class="about-me">
 <div>
 <h3>SKILLS</h3>
@@ -229,26 +267,22 @@ margin : auto;
 </div>
 </div>
 <div class="yaswanth">
-<p>My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.My name is yaswanth and i am student at VIT.
-</div>
+<p>My name is yaswanth and i am student at VIT. I always wanted to be learning something new , that is why you are reading this.
+I had tried to learn different type of skills but only few of them got my intrest . One is web development and the other is 
+game development . I also made few intresting projects . Out of them two are games . One is replica of chrome dino game and the 
+other is replica of space invaders . The rest of projects deals with openCV. These projects include object detection, motion detection,
+face detection . Using the knowledge of face detection I made a real life project named driver drowsiness detection. The main aim of 
+this project is to determine if the driver was drowsy and alert him with an alarm.</p>
+<p>If you are a guy who read all this stuff ,then go down below write your opinion on this website and submit it .</p>
 </div>
 </section>
 <section id="contact">
-<div class="cont">
 <div class="content">
 <div><h2>CONTACT<h2></div>
 <div><input type="text" placeholder="ENTER YOUR NAME"></div>
 <div><input type="text" placeholder="EMAIL"></div>
 <div><input type="text" class="tet"placeholder="WRITE YOUR OPINION"></div>
-<div><button>SUBMIT</button></div>
-</div>
+<div class="but"><button><a href="https://youtu.be/dQw4w9WgXcQ" target="blank">SUBMIT</a></button></div>
 </div>
 </section>
 
