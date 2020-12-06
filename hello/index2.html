@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<style>
+body{
+background : #161616;
+}
+nav{
+  background: #161616;
+  height: 80px;
+  width: 100%;
+  z-index : 1;
+position : fixed;
+
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+text-decoration : none;
+}
+a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+#about{
+height : 100vh;
+padding-top : 100px;
+}
+.about-me {
+display : flex;
+justify-content : center;
+width : 100%;
+}
+.about-me div{
+width : 100%;
+margin : 20px;
+background : #008080;
+color : white;
+border-radius : 20px;
+text-align : center;
+}
+.about-me div h3{
+font-size : 35px;
+font-weight : 300;
+}
+.about-me div p{
+font-size : 25px;
+font-weight : 150;
+opacity : 75%;
+}
+.yaswanth{
+margin : 20px;
+font-size : 25px;
+font-weight : 150;
+background : #008080;
+border-radius : 20px;
+text-align : center;
+padding : 30px 15px;
+color : white;
+}
+.yaswanth p{
+opacity : 75%;
+}
+@media screen and (max-width : 750px){
+label.logo{
+font-size : 30px;
+padding : 0px;
+}
+.checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: -15%;
+  }
+
+.hi2 {
+flex-wrap : wrap;
+}
+.div2 ul a{
+color : white;
+text-decoration : none;
+font-size : 15px;
+}
+.div2 ul li{
+margin : 5px;
+display : flex;
+
+}
+.about-me{
+flex-wrap : wrap;
+}
+.yaswanth p{
+opacity : 75%;
+font-size : 15px;}
+
+}
+</style>
+<body>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">R.Y.S</label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Contact</a></li>
+      </ul>
+    </nav>
+<section id="about">
+<div class="about-me">
+<div>
+<h3>SKILLS</h3>
+<p>Web Development</p>
+<p>Python</p>
+<p>Machine learning</p>
+<p>game developer</p>
+<p>video editing</p>
+</div>
+<div>
+<h3>EDUCATION</h3>
+<p class="heading">HIGH SCHOOL :</p>
+<p>Narayana Junior College</p>
+<p class = "heading">COLLEGE :</p>
+<p>Vellore insitute of technology</p>
+</div>
+</div>
+<div class="yaswanth">
+<p>My name is yaswanth and i am student at VIT. I always wanted to be learning something new , that is why you are reading this.
+I had tried to learn different type of skills but only few of them got my intrest . One is web development and the other is 
+game development . I also made few intresting projects . Out of them two are games . One is replica of chrome dino game and the 
+other is replica of space invaders . The rest of projects deals with openCV. These projects include object detection, motion detection,
+face detection . Using the knowledge of face detection I made a real life project named driver drowsiness detection. The main aim of 
+this project is to determine if the driver was drowsy and alert him with an alarm.</p>
+<p>If you are a guy who read all this stuff ,then go down below write your opinion on this website and submit it .</p>
+</div>
+</section>
+</body>
+</html>
