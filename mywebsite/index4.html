@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<style>
+<!------------------------------------------------------------------styling-------------------------------------------------------------------------------------->
+
+
+*{
+margin :0px;
+padding : 0px;
+background : #161616;
+}
+body{
+background : #161616;
+width : 100%;
+z-index : -1;
+}
+nav{
+  background: #161616;
+  height: 80px;
+  width: 100%;
+  z-index : 1;
+position : fixed;
+height : 81px;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+text-decoration : none;
+}
+a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+#Pro{
+padding-top : 80px;
+background : #161616;
+width : 100%;
+}
+.hi2 {
+width : 100%;
+padding-top : 20px;
+display: flex;
+flex-wrap: nowrap;
+}
+.hi2 h1{
+  font-size : 45px;
+  color : white;
+  font-weight : 600;
+  margin : 20px;
+}
+.hi2 div{
+width : 100%;
+margin-top : 50px;
+margin-bottom : 50px;
+}
+.none{
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  margin : 20px;
+}
+
+.image{
+height : 500px;
+width : 500px;
+border : yellow solid 5px;
+border-radius : 35px;
+}
+.skills{
+color : yellow;
+text-align : center;
+}
+.skills h1{
+font-size : 35px;
+
+}
+.skills h2{
+font-size : 30px;
+opacity : 70%;
+}
+.skills h3{
+font-size : 25px;
+opacity : 40%;
+}
+.hi2 p{
+color : white ;
+font-size : 35px;
+}
+
+#contact{
+display : flex;
+justify-content : center;
+align-items : center;
+height : 100vh;
+}
+.content{
+background : #008080;
+border-radius : 20px;
+width : 40%;
+margin : auto;
+text-align : center;
+padding : 40px 0px;
+}
+.content input{
+background : #161616;
+margin : 8px;
+border-radius : 20px;
+width : 60%;
+color : white;
+height : 5vh;
+}
+.content button{
+background : #008080;
+color : white;
+font-size : 20px;
+margin : 20px;
+border : none;
+}
+.content a{
+text-decoration : none;
+color : white;
+font-weigth : 300;
+}
+.content button:hover{
+color : yellow;
+}
+
+
+
+@media screen and (max-width : 750px){
+label.logo{
+font-size : 30px;
+padding : 0px;
+}
+.checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+.none {
+flex-wrap : wrap;
+justify-content: space-around;
+}
+.none div{
+}
+.image{
+height : 300px;
+width : 300px;
+border : yellow solid 5px;
+border-radius : 35px;
+margin : 10px;
+}
+.div2 ul a{
+color : white;
+text-decoration : none;
+font-size : 15px;
+}
+.div2 ul li{
+margin : 5px;
+display : flex;
+
+}
+.about-me{
+flex-wrap : wrap;
+}
+.yaswanth p{
+opacity : 75%;
+font-size : 15px;}
+.content{
+width : 100%;
+margin : 10px;
+}
+#contact{
+height : 70vh;
+}
+}
+
+<!-------------------------------------------------------------end of style-------------------------------------------------------------------------------------->
+</style>
+<body>
+<!----------------------------------------------------------------------body------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------navbar-------------------------------------------------------------------------------------->
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">R.Y.S</label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index4.html">Projects</a></li>
+        <li><a href="index3.html">Contact</a></li>
+      </ul>
+    </nav>
+<!-------------------------------------------------------------navbar---------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------home------------------------------------------------------------------------------------->
+<section id="Pro">
+
+<div class= "hi2">
+<h1>GAMES :-</h1>
+</div>
+  
+  <div class="none">
+<img src="game1.png" class="image">
+<img src="game2.png" class="image">
+</div>
+
+<div class= "hi2">
+<h1>COMPUTER VISION :-</h1>
+</div>
+<div class="none">
+<img src="cv1.png" class="image">
+<img src="cv2.png" class="image">
+
+</div>
+
+
+</div>
+</section>
+<!----------------------------------------------------------------home--------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------about-------------------------------------------------------------------------------------->
+<!------------------------------------------------------------end of body--------------------------------------------------------------------------------------->
+</body>
+
+</html>
