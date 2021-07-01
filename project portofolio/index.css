@@ -1,0 +1,87 @@
+*{
+margin : 0px;
+padding : 0px;
+background : blac;
+}
+nav{
+display : flex;
+justify-content : space-around;
+padding : 20px;
+background : black;
+}
+#logo{
+font-size : 25px;
+color : white;
+}
+.list{
+display : flex;
+width : 50%;
+align-items : center;
+list-style : none;
+justify-content : space-around;
+}
+.list li a{
+text-decoration : none;
+color : white;
+font-size : 20px;
+}
+#burger{
+display : none;
+}
+#burger div{
+width : 25px;
+height : 3px;
+background-color : white;
+margin : 5px;
+}
+
+
+
+@media screen and (max-width : 1024px){
+.list{
+width : 60%;
+}}
+
+
+@media screen and (max-width : 760px){
+body{
+overflow : hidden;
+}
+.list{
+right : 0px;
+position : absolute;
+top : 20vh;
+background : black;
+flex-direction : column;
+align-items : center;
+height : 80vh;
+float : left;
+width : 50%;
+transform : translateX(100%);
+transition : 1s;
+}
+.list li{
+opacity : 0;
+transition : 1.5s;
+}
+#burger{
+display : block;
+cursor : pointer;
+margin-top : 2vh;
+}
+.list-vis{
+transform : translateX(0%);
+transition : 1s;
+}
+.list-vis li{
+opacity : 1;
+transition : 1.5s;
+
+}
+
+
+
+
+
+
+
