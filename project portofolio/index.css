@@ -1,13 +1,16 @@
 *{
 margin : 0px;
 padding : 0px;
-background : blac;
+
 }
 nav{
 display : flex;
-justify-content : space-around;
 padding : 20px;
+justify-content : space-around;
 background : black;
+position : fixed;
+
+width : 100%;
 }
 #logo{
 font-size : 25px;
@@ -36,6 +39,82 @@ margin : 5px;
 }
 
 
+#home{
+
+height : 100vh;
+background : black;
+display : flex;
+justify-content : space-around;
+align-items : center;
+z-index : -1;
+padding-top : 50px;
+width : 100%;
+position : fixed;
+}
+.first-div{
+display : flex;
+z-index : 0;
+}
+.first-first{
+height : 250px;
+width : 250px;
+border-radius : 50%;
+cursor : pointer;
+border : 3px yellow solid;
+display : flex;
+justify-content : space-around;
+align-items : center;
+}
+.first-second{
+position : absolute;
+cursor : pointer;
+z-index:0;
+}
+.first-second img{
+height : 250px;
+width : 250px;
+border-radius : 50%;
+border : 3px yellow solid;
+z-index:0;
+}
+.second-div{
+color : white;
+font-size : 35px;
+text-align : center;
+
+}
+.second-div h1{
+padding : 20px;
+}
+.name{
+color : red;
+}
+.typing{
+color : red;
+}
+.first-second-add{
+display : none;
+transition :width 5s;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 70px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
 
 @media screen and (max-width : 1024px){
 .list{
@@ -47,10 +126,15 @@ width : 60%;
 body{
 overflow : hidden;
 }
+#logo{
+z-index : 2;
+}
+
 .list{
+z-index:1;
 right : 0px;
 position : absolute;
-top : 13vh;
+top : 8vh;
 background : black;
 flex-direction : column;
 align-items : center;
@@ -67,7 +151,7 @@ transition : 1.5s;
 #burger{
 display : block;
 cursor : pointer;
-margin-top : 2vh;
+z-index : 1;
 }
 .list-vis{
 transform : translateX(0%);
@@ -76,10 +160,14 @@ transition : 1s;
 .list-vis li{
 opacity : 1;
 transition : 1.5s;
-
 }
-
-
+#home{
+flex-wrap : wrap;
+height : 100vh;
+}
+.second-div{
+font-size : 20px;
+}
 
 
 
