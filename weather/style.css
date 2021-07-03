@@ -19,4 +19,10 @@ color : white;
 }
 .temperature{
 cursor : pointer;
+display : flex;
+align-items : center;
+}
+.degree{
+margin : 10px;
+font-size : 30px;
 }
