@@ -5,20 +5,27 @@ padding : 0px;
 }
 nav{
 display : flex;
-padding : 20px;
-justify-content : space-around;
+justify-content : space-between;
+color : white;
 background : black;
+padding : 20px;
+align-items : center;
 position : fixed;
-
 width : 100%;
 }
 #logo{
 font-size : 25px;
 color : white;
+display : flex;
+justify-content : space-between;
+align-items : center;
+}
+.nav-list{
+right : 0px;
+width : 60%;
 }
 .list{
 display : flex;
-width : 50%;
 align-items : center;
 list-style : none;
 justify-content : space-around;
@@ -27,6 +34,10 @@ justify-content : space-around;
 text-decoration : none;
 color : white;
 font-size : 20px;
+}
+.list li:hover{
+background : grey;
+transition : 1s;
 }
 #burger{
 display : none;
@@ -41,7 +52,7 @@ margin : 5px;
 
 #home{
 
-height : 100vh;
+height : 90vh;
 background : black;
 display : flex;
 justify-content : space-around;
@@ -49,11 +60,12 @@ align-items : center;
 z-index : -1;
 padding-top : 50px;
 width : 100%;
-position : fixed;
+
 }
 .first-div{
 display : flex;
 z-index : 0;
+
 }
 .first-first{
 height : 250px;
@@ -109,66 +121,188 @@ transition :width 5s;
 .fa:hover {
   opacity: 0.7;
 }
+#about{
+background : black;
+padding : 20px;
 
+}
+.for-margin{
+margin : auto;
+width : 80%;
+}
+.about-me{
+background : #372B2B;
+color : white;
+font-size : 20px;
+font-weight : bold;
+border-radius : 5px;
+margin : 10px;
+display : flex;
+align-items : center;
+}
+.about-me p{
+padding : 70px;
+}
+.skills ul{
+display : flex;
+flex-direction : column;
+justify-content : space-around;
+align-items : center;
+list-style : none;
+height : 100%;
+font-size : 20px;
+font-weight : bold;
+}
+.skills-from{
+display : grid;
+grid-template-columns: 1fr 1fr;
+width : 80%;
+margin : auto;
+}
+.skills-from div{
+background : #372B2B;
+color : white;
+padding : 30px;
+margin : 10px;
+border-radius : 5px;
+}
+.from h3{
+padding-top : 10px;
+font-weight : bold;
+}
+.skills,.from,.about-me{
+opacity : 0;
+transition : 2s;
+}
+#projects{
+height : 100vh;
+background : black;
+color : white;
+display : flex;
+justify-content : center;
+align-items : center;
+}
+.pro a{
+text-decoration : none;
+font-size : 30px;
+font-weight : bold;
+color : red;
+}
+#contact{
+height : 80vh;
+background : black;
+display : flex;
+justify-content : center;
+align-items : center;
+}
+.container{
+background : #372B2B;
+border-radius : 10px;
+padding : 50px;
+display : flex;
+flex-direction : column;
+align-items : center;
 
+}
+.container input{
+margin : 15px;
+padding : 10px;
+background : black;
+color : white;
+font-size : 20px;
+font-weight : bold;
+border-radius : 15px;
+border : 2px #372B2B solid;
+}
+.container h1{
+color : white;
+font-weight : bold;
+font-size : 30px;
+}
+.last-input{
+padding : 40px;
+}
+.submit{
+width : 200px;
+padding : 10px;
+font-size : 20px;
+color : black;
+background : grey;
+border-radius : 20px;
+border : 2px #372B2B solid;
+cursor : pointer;
+}
+.submit a{
+text-decoration : none;
+color : #372B2B;
 
-
-
+}
+footer{
+background : #372B2B;
+display : flex;
+justify-content : space-around;
+align-items : center;
+color : white;
+padding : 20px;
+}
+footer a{
+margin : 20px;
+border-radius : 100%;
+}
+footer div{
+display : flex;
+}
 
 
 @media screen and (max-width : 1024px){
-.list{
-width : 60%;
-}}
+}
 
 
 @media screen and (max-width : 760px){
-body{
-overflow : hidden;
-}
+
 #logo{
+width : 80%;
+justify-content : space-between;
+align-items : center;
+}
+nav{
+flex-direction : column;
 z-index : 2;
 }
-
 .list{
-z-index:1;
-right : 0px;
-position : absolute;
-top : 8vh;
-background : black;
 flex-direction : column;
-align-items : center;
-height : 87vh;
-float : left;
-width : 75%;
-transform : translateX(100%);
-transition : 1s;
+display : none;
+text-align : center;
+width : 100%;
 }
 .list li{
-opacity : 0;
-transition : 1.5s;
+padding : 10px;
+width : 100%;
+}
+.list-show{
+display : block;
+width : 100%;
 }
 #burger{
 display : block;
 cursor : pointer;
 z-index : 1;
 }
-.list-vis{
-transform : translateX(0%);
-transition : 1s;
-}
-.list-vis li{
-opacity : 1;
-transition : 1.5s;
-}
+
 #home{
 flex-wrap : wrap;
-height : 100vh;
+height : 120vh;
 }
 .second-div{
 font-size : 20px;
 }
-
+.skills-from{
+grid-template-columns: 1fr;
+}
+footer{
+flex-wrap :wrap;
+}
+}
 
 
 
