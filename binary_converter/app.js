@@ -176,34 +176,139 @@ HexToBin(document.getElementById("base16").value);
 updateScreen();
 }
 else{
-alert("more than one inputs are filled/please give the input");
+alert("more than one inputs are filled/ please give the input /Clear input before next Operation");
 }
-
-
-
-
 });
 
 $("#clear").on("click",function(){
 clear();
 });
 
+var firstOp = "";
+var secondOp = "";
+var answer;
+function add(operator1,operator2){
+firstOp = operator1;
+secondOp = operator2;
+var i = firstOp.length-1;
+var j = secondOp.length-1;
+answer ="";
+var sum = 0;
+var carry = 0;
+while(i>=0 || j>=0){
+if(i>=0){
+sum += parseInt(firstOp.charAt(i));
+}
+if(j>=0){
+sum += parseInt(secondOp.charAt(j));
+}
+answer = (sum+carry)%2+answer;
+carry = sum+carry>1?1:0;
+sum = 0;
+i--;
+j--;
+}
+if(carry!=0){
+answer = carry+answer;
+}
+}
+function updateAddScreen(){
+document.getElementById("first-operator").value = firstOp;
+document.getElementById("second-operator").value = secondOp;
+document.getElementById("add-answer").innerHTML = answer;
+console.log(answer);
+}
+function addClear(){
+document.getElementById("first-operator").value = "";
+document.getElementById("second-operator").value = "";
+document.getElementById("add-answer").innerHTML = "answer";
+document.getElementById("first-operator-sub").value = "";
+document.getElementById("second-operator-sub").value = "";
+document.getElementById("sub-answer").innerHTML = "answer";
+}
+
+$("#add-calc").on("click",function(){
+
+add(document.getElementById("first-operator").value,document.getElementById("second-operator").value);
+updateAddScreen();
+});
+$("#add-clear").on("click",function(){
+addClear();
+});
+
+var firstOp_sub = "";
+var secondOp_sub = "";
+var answer_sub;
+function sub(operator1,operator2){
+var sum1 = 0;
+var sum2 = 0;
+var carry_sub = 0;
+var add_sub = 0;
+answer_sub = "";
+firstOp_sub = operator1;
+secondOp_sub = operator2;
+var i = firstOp_sub.length-1;
+var j = secondOp_sub.length-1;
+while(i>=0 || j>=0){
+if(i>=0){
+sum1 = parseInt(firstOp_sub.charAt(i));
+}
+if(j>=0){
+sum2 = parseInt(secondOp_sub.charAt(j));
+}
+if(sum1==0 && sum2==0){
+answer_sub = add_sub+answer_sub;
+}
+if(sum1==1 && sum2==0){
+if(carry_sub!=0){
+answer_sub = 0+answer_sub;
+add_sub = 0;
+carry_sub = 0;
+}
+else{
+answer_sub = 1+answer_sub;
+add_sub = 0;
+}
+}
+if(sum1 == 0 && sum2==1){
+carry_sub = 1;
+if(add_sub == 1){
+answer_sub = 0+answer_sub;
+}
+else{
+answer_sub = 1+answer_sub;
+}
+}
+if(sum1 == 1 && sum2 == 1){
+answer_sub = 0+answer_sub;
+} 
+i--;
+j--;
+sum1 = sum2 = 0;
+}
+if(carry_sub!=0){
+answer_sub = 1+answer_sub;
+}
+else{
+answer_sub = 0+answer_sub;
+}
+
+}
+function updateSubScreen(){
+document.getElementById("first-operator-sub").value = firstOp_sub;
+document.getElementById("second-operator-sub").value = secondOp_sub;
+document.getElementById("sub-answer").innerHTML = answer_sub;
+}
 
 
+$("#sub-calc").on("click",function(){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+sub(document.getElementById("first-operator-sub").value,document.getElementById("second-operator-sub").value);
+updateSubScreen();
+});
+$("#sub-clear").on("click",function(){
+addClear();
+});
 
 
 });
