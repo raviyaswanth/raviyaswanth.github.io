@@ -236,63 +236,42 @@ $("#add-clear").on("click",function(){
 addClear();
 });
 
+function BinaryToDecimal(operator){
+var dec = 0;
+var n = 0;
+for(var i = operator.length-1;i>=0;i--){
+dec = dec + Math.pow(2,n)*parseInt(operator.charAt(i));
+n++;
+}
+return dec;
+}
+function DecimalToBinary(decimal){
+var nice = "";
+var dummy1 = parseInt(decimal);
+while(dummy1>=1){
+nice = nice+(dummy1%2).toString();
+dummy1 = Math.floor(dummy1/2);
+}
+nice = nice.split("").reverse().join("");
+return nice
+}
+
 var firstOp_sub = "";
 var secondOp_sub = "";
 var answer_sub;
 function sub(operator1,operator2){
-var sum1 = 0;
-var sum2 = 0;
-var carry_sub = 0;
-var add_sub = 0;
-answer_sub = "";
 firstOp_sub = operator1;
 secondOp_sub = operator2;
-var i = firstOp_sub.length-1;
-var j = secondOp_sub.length-1;
-while(i>=0 || j>=0){
-if(i>=0){
-sum1 = parseInt(firstOp_sub.charAt(i));
-}
-if(j>=0){
-sum2 = parseInt(secondOp_sub.charAt(j));
-}
-if(sum1==0 && sum2==0){
-answer_sub = add_sub+answer_sub;
-}
-if(sum1==1 && sum2==0){
-if(carry_sub!=0){
-answer_sub = 0+answer_sub;
-add_sub = 0;
-carry_sub = 0;
-}
-else{
-answer_sub = 1+answer_sub;
-add_sub = 0;
-}
-}
-if(sum1 == 0 && sum2==1){
-carry_sub = 1;
-if(add_sub == 1){
+var Operator1_int = BinaryToDecimal(operator1);
+var Operator2_int = BinaryToDecimal(operator2);
+if(Operator1_int>=Operator2_int){
+answer_sub = DecimalToBinary(Operator1_int-Operator2_int);
 answer_sub = 0+answer_sub;
 }
 else{
+answer_sub = DecimalToBinary(Operator2_int-Operator1_int);
 answer_sub = 1+answer_sub;
 }
-}
-if(sum1 == 1 && sum2 == 1){
-answer_sub = 0+answer_sub;
-} 
-i--;
-j--;
-sum1 = sum2 = 0;
-}
-if(carry_sub!=0){
-answer_sub = 1+answer_sub;
-}
-else{
-answer_sub = 0+answer_sub;
-}
-
 }
 function updateSubScreen(){
 document.getElementById("first-operator-sub").value = firstOp_sub;
